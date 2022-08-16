@@ -1,0 +1,39 @@
+h1{ 
+    font-size: 20px;
+    color:white;
+    background: black;
+    font: 30px;
+    margin-bottom: 0px;
+    block-size: 30px;
+    text-align: left;
+}
+span{
+    font-size: 25px;
+    color: aqua;
+    block-size: 30px;
+}
+
+h2{
+    font-style: italic;
+    font-family: fantasy; 
+    font-size: 15px;
+    color: aliceblue;
+background-color: blueviolet;
+margin-top: 2px;
+margin-bottom: 2px;
+text-align: center;
+block-size: 30px;
+}
+
+h3{
+    font-family: claibri;
+    block-size: 30px;
+    text-decoration: underline;
+    text-underline-offset: contact us;
+    font-size: 15px;
+    color: rgb(87, 37, 133);
+    text-align:right ;
+    background-color: rgb(115, 188, 249);
+margin-top: 2px;
+margin-bottom: 2px;
+}
