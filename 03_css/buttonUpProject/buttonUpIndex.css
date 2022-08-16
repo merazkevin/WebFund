@@ -1,0 +1,36 @@
+
+
+.cylinderButton{
+    text-align: center;
+    color: rgb(37, 125, 248);
+    background-color: rgb(174, 230, 241);
+padding: 10px;
+display: block;
+margin:3px;
+height: 25px;
+width: 100px;
+border-radius: 25%;
+}
+
+.roundButton{
+    color: rgb(255, 255, 255);
+    background-color: aquamarine;
+border-radius: 50%;
+padding: 10px;
+display: block;
+height: 50px;
+width: 50px;
+margin:3px;
+}
+
+.squareButton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(97, 159, 247);
+padding: 10px;
+margin:3px;
+display: block;
+block-size: 50px;
+}
+.shadow{
+    box-shadow: 100px,100px,100px, rgb(251, 0, 0);
+}
