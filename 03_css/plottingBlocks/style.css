@@ -1,0 +1,52 @@
+
+.headerGreen{
+    background-color: green;
+    height: 150px;
+    width: 1000px;
+    margin: 15px;
+}
+
+.leftBlue{
+    background-color: blue;
+    height: 400px;
+    width: 200px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#rightRed{
+    background-color: red;
+    height: 400px;
+    width: 800px;
+    display: inline-block;
+    margin: 5px;
+    vertical-align: top;
+}
+.fighters{
+    background-color: rgb(250, 230, 7);
+    height: 230px;
+    width: 230px;
+    border: 1px, black;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.purpInfo{
+    background-color: rgb(135, 12, 166);
+    height: 100px;
+    width: 775px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    
+    
+}
+
+.sizeWorriors{
+    align-content: center;
+    height: 225px;
+    width: 225px;
+    
+}
