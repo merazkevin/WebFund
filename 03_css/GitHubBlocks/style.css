@@ -10,7 +10,11 @@ color: grey;
 }
 
 body{
-    background-color:rgb(233, 240, 233)
+    border: 2px;
+    height: 1000px;
+    width: 1000px;
+    background-color:rgb(87, 88, 87);
+    background-repeat: repeat;
 }
 
 
@@ -23,6 +27,7 @@ body{
     justify-content: center;
     align-items: center;
     vertical-align: bottom;
+    margin: 10px;
 }
 
 #violetBlock{
@@ -33,7 +38,8 @@ body{
     gap: 100px;
     justify-content: center;
     align-items: center;
-    vertical-align: bottom
+    vertical-align: bottom;
+    margin: 10px;
 }
 
 #whiteBlock{
@@ -44,10 +50,11 @@ body{
     gap: 100px;
     justify-content: center;
     align-items: center;
-    vertical-align: bottom
+    vertical-align: bottom;
+    margin: 10px;
 }
 .innerBoxes{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     height: 150px;
     width: 150px;
     display:flex;
@@ -55,6 +62,11 @@ body{
     justify-content: center;
     align-items: center;
     vertical-align: bottom
+    background-size: 100% 100%;
+}
 
 
+img{
+    height: 150px;
+    width: 150px;    
 }
