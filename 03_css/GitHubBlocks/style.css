@@ -1,0 +1,60 @@
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+color: grey;
+}
+
+body{
+    background-color:rgb(233, 240, 233)
+}
+
+
+#blueBlock{
+    background-color: rgb(66, 161, 255);
+    height: 250px;
+    width: 800px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom;
+}
+
+#violetBlock{
+    background-color: violet;
+    height: 250px;
+    width: 800px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom
+}
+
+#whiteBlock{
+    background-color: white;
+    height: 250px;
+    width: 800px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom
+}
+.innerBoxes{
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    display:flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom
+
+
+}

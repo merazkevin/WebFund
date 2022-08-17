@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: boder-box; /*keeps boxsizes exact no matter the padding or margin
+    dont use display: inline-block instead use display: flex;
+    (gap > margin) ->to add space in between elements*/
+}
+
+body{
+    background-color: aqua;
+    padding: 5px;
+}
