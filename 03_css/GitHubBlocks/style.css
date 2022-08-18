@@ -6,7 +6,7 @@
 }
 
 h1{
-color: grey;
+color: black;
 }
 
 body{
@@ -69,4 +69,11 @@ body{
 img{
     height: 150px;
     width: 150px;    
+}
+.container{
+    background-color: grey;
+    width: 850px;
+    margin:  0 auto;
+    padding: 25px;
+    text-align: center;
 }
