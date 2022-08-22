@@ -306,6 +306,9 @@ a{
             border: #333333 1px solid;
         }
         .yourConnectionsBox>p{
+            font-size: 25px;
+            margin: none;
+            background-color: white;
             height: 35px;
             width: 100%;
             border: #333333 1px solid;
