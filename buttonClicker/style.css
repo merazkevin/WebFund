@@ -18,6 +18,7 @@ body{
 
 /* columns main outer Box */
 .columnsFLexParent{
+    gap: 10px;
     display: flex;
     width: 760px;
     height: 610px;
@@ -43,6 +44,8 @@ body{
 }
 
 .navBarinsideContent>button{
+    color: white;
+    background-color: #2b78e4;
     margin-left: 40px;
     width: 50px;
     height: 25px;
@@ -85,6 +88,7 @@ body{
 }
 .leftSide_insideLeftcolum> p{
     font-size: 15px;
+
 }
 .leftSide_insideLeftcolum>button{
     background-color: #ffd966;
@@ -94,10 +98,42 @@ body{
     text-decoration: none;
     border: #1e1e1e 1px solid;
     box-shadow: 2px 2px 2px;
-    
 }
 /* right-col innerside  */
 .rightSide_insideLeftColumn{
     font-size: 20px;
     margin: 140px 50px;
+}
+
+.rightSide_insideLeftColumn a {
+    color: #085393;
+}
+
+
+/* outerBOx of right column */
+.RightColumnOurterBox{
+    margin-left: px 0px 0px 25px ;
+    padding: 25px 25px;
+    background-color: white;
+    width: 700px;
+    height: 200px;
+    border: #1e1e1e 1px solid;
+    box-shadow: #1e1e1e 3px 3px 3px;
+}
+.RightColumnOurterBox>p {
+    padding: 15px;
+    display: inline-block;
+    width: 350px;
+    font-size: 20px;
+}
+.RightColumnOurterBox>p span{
+    font-size: 35px;
+}
+.RightColumnOurterBox>button{
+    margin: 5px;
+    width: 150px;
+    height: 35px;
+    background-color: #93c47d;
+    border: #0b0000 2px solid;
+    box-shadow:#1e1e1e 3px 3px 3px;
 }
