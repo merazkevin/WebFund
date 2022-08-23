@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     margin-right:100px;
     margin-left: 100px;
@@ -17,13 +18,11 @@ body{
 
 /* columns main outer Box */
 .columnsFLexParent{
-    gap: 10px;
     display: flex;
     width: 760px;
     height: 610px;
 }
 .navBarinsideContent{
-    gap: px;
     display: flex;
     font-family:monospace;
     font-weight: 100;
@@ -48,7 +47,6 @@ body{
     margin-left: 40px;
     width: 50px;
     height: 25px;
-    border-radius: none;
     box-shadow: black 3px 3px 3px;
 }
 
@@ -98,6 +96,9 @@ body{
     border: #1e1e1e 1px solid;
     box-shadow: 2px 2px 2px;
 }
+.leftSide_insideLeftcolum>button a{
+    text-decoration: none;
+}
 /* right-col innerside  */
 .rightSide_insideLeftColumn{
     font-size: 20px;
@@ -132,7 +133,12 @@ body{
     margin: 5px;
     width: 150px;
     height: 35px;
+    color: #0b0000;
     background-color: #93c47d;
     border: #0b0000 2px solid;
     box-shadow:#1e1e1e 3px 3px 3px;
+    text-decoration: none;
+}
+.RightColumnOurterBox>button a{
+    text-decoration: none;
 }
