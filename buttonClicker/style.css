@@ -6,7 +6,6 @@
 body{
     margin-right:100px;
     margin-left: 100px;
-    background-color: aqua;
 }
 /* this is navBar outer box */
 
@@ -112,7 +111,7 @@ body{
 
 /* outerBOx of right column */
 .RightColumnOurterBox{
-    margin-left: px 0px 0px 25px ;
+    margin-left: 85px ;
     padding: 25px 25px;
     background-color: white;
     width: 700px;
@@ -123,11 +122,11 @@ body{
 .RightColumnOurterBox>p {
     padding: 15px;
     display: inline-block;
-    width: 350px;
+    width: 200px;
     font-size: 20px;
 }
 .RightColumnOurterBox>p span{
-    font-size: 35px;
+    font-size: 30px;
 }
 .RightColumnOurterBox>button{
     margin: 5px;
