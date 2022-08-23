@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-right:100px;
+    margin-left: 100px;
+    background-color: aqua;
+}
+/* this is navBar outer box */
+
+.navBarBod{
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #cccccc;
+}
+
+/* columns main outer Box */
+.columnsFLexParent{
+    display: flex;
+    width: 760px;
+    height: 610px;
+}
+.navBarinsideContent{
+    gap: px;
+    display: flex;
+    font-family:monospace;
+    font-weight: 100;
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+.navBarinsideContent>h1{
+    flex: 3;
+
+}
+
+.navBarinsideContent>input{
+    flex: 3;
+    margin: 10px;
+    margin-left: 0px;
+    box-shadow: black  1px 1px 1px;
+}
+
+.navBarinsideContent>button{
+    margin-left: 40px;
+    width: 50px;
+    height: 25px;
+    border-radius: none;
+    box-shadow: black 3px 3px 3px;
+}
+
+/* right and left columns box */
+.columnsFLexParent{
+    display: flex;
+}
+
+/* outerBOx of left column */
+.OuterleftColumnBox{
+    padding: 5px 0px;
+}
+/* insideContent Of leftColumn */
+.insideLeftColumn{
+    
+}
+.secundaryLrColumn{
+    border: #1e1e1e 2px solid;
+    background-color: white;
+    margin: 0px 0px 25px 0px;
+    width: 755px;
+    height: 175px;
+    box-shadow: 2px 2px 2px;
+    display: flex;
+    align-items: center;
+}
+.leftSide_insideLeftcolum{
+    margin-bottom: 25px;
+    padding-left: 5px;
+    font-family: arial;
+    justify-content: space-between;
+}
+
+.leftSide_insideLeftcolum>h1{
+    font-size: 40px;
+}
+.leftSide_insideLeftcolum> p{
+    font-size: 15px;
+}
+.leftSide_insideLeftcolum>button{
+    background-color: #ffd966;
+    margin: 25px 0px;
+    width: 80px;
+    height: 25px;
+    text-decoration: none;
+    border: #1e1e1e 1px solid;
+    box-shadow: 2px 2px 2px;
+    
+}
+/* right-col innerside  */
+.rightSide_insideLeftColumn{
+    font-size: 20px;
+    margin: 140px 50px;
+}
