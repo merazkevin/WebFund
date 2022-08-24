@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.webMainBox{
+    width: 2000px;
+    height:2000px;
+    padding: 0px 25px;
+    border: black 2px solid;
+}
+.header{
+    display: flex;
+    width: 900px;
+    height: 100px;
+    padding: 10px 10px;
+    background-color: aqua;
+    justify-content: space-around;
+}
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    font-size: 25px;
+    padding: 0px 15px;
+}
+.header input {
+    width: 400px;
+    height: 30px;
+    border:  gray 1px solid;
+}
+#searchButton{
+    font-size: 15px;
+    color: black;
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #dfb888;
+    box-shadow: 3px 3px 3px;
+}
+
+#loginButton{
+    font-size: 15px;
+    color: black;
+    margin-left: 80px;
+    width: 100px;
+    height: 30px;
+    background-color: #dfb888;
+    box-shadow: 3px 3px 3px;
+}
+
+.columnsMainBody{
+    display: flex;
+    margin-top: 30px;
+    width: 900px;
+    height: 800px;
+    justify-content: space-around;
+}
+
+.columnLeft{
+    width: 550px;
+}
+.columnRight{
+    height: 780px;
+}
+
+.puppyCardBody{
+    margin-bottom: 15px;
+    display: flex;
+    background-color: white;
+    width: 550px;
+    height: 350px;
+    border: gray 2.5px solid;
+}
+.puppyCard-LeftColumn{
+    text-align: center;
+    padding: 30px 30px;
+    font-size: 15px;
+    width: 275px;
+    height: 350px;
+}
+.puppyCard-LeftColumn button {
+    width: 100px;
+    height: 25px;
+    background-color: aquamarine;
+    box-shadow: 3px 3px 3px;
+}
+.puppyCard-RIghtColumn{
+    margin-top: 100px;
+    margin: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+.mediaUploadCard{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 335px;
+    padding: 5px;
+    text-align: center;
+    font-size: 23px;
+    border: gray 2px solid;
+    background-color:white ;
+}
+.mediaUploadCard button {
+    width: 100px;
+    height: 30px;
+    background-color: #d2691e;
+    box-shadow: 3px 3px 3px;
+    border: black 1px solid;
+}
+.videoCard{
+    margin-left: 10px;
+    width: 335px;
+    padding: 5px;
+    font-size: 20px;
+    border: gray 2px solid;
+    background-color:white ;
+}
+.videoCard p {
+    text-align: center;
+}
+.cookieBox{
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3%;
+    width: 900px;
+    height: 150px;
+    padding: 15px;
+    background-color: rgba(211, 211, 211, 0.643);
+    border: black 2px solid;
+    position: fixed;
+    bottom: 100px;
+}
+.cookieBox button {
+    color: white;
+    background-color: blue;
+    width: 150px;
+    height: 38px;
+    box-shadow: black 3px 3px 3px;
+}
+.cookieBox p {
+    font-size: 25px;
+}
