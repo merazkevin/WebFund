@@ -119,6 +119,20 @@
 .videoCard p {
     text-align: center;
 }
+
+.dropDown select{
+    padding: 10px;
+    background-color: aqua;
+    font-size: 35px;
+    color: black;
+    align-items: center;
+    width: 900px;
+    height: 80px;
+    border: #d2691e 5px double;
+}
+.dropDown{
+    justify-content: center;
+}
 .cookieBox{
     gap: 15px;
     display: flex;

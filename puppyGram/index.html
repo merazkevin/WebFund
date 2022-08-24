@@ -14,9 +14,9 @@
         <div class="header">
             <h2>PuppyGram</h2>
             <span>
-                <input type="text" placeholder="search  for Puppies in your area!">
+                <input id="puppyNames" type="text" placeholder="search  for Puppy Names!">
             </span>
-            <button id="searchButton">Search!</button>
+            <button id="searchButton" onclick="searchpuppies('puppyNames')">Search!</button>
             <button id="loginButton" onclick="toggleLogin(this)">login</button>
         </div>
         <div class="columnsMainBody">
@@ -25,7 +25,11 @@
                 <!-- puppyCard 1 -->
                 <div class="puppyCardBody">
                     <div class="puppyCard-LeftColumn">
-                        <img src="./resources/puppy.jpeg" alt="" width="140px" height="140px">
+                        <img
+                            onmouseout="switchImage(this)"
+                            onmouseover="switchImage(this)" 
+                            src="./resources/puppy.jpeg" alt="Junior"
+                            width="140px" height="140px">
                         <h1>Junior</h1>
                         <p><em>Male</em></p>
                         <p><em>Breed: fox</em></p>
@@ -42,7 +46,12 @@
                 <!-- puppyCard 2 -->
                 <div class="puppyCardBody">
                     <div class="puppyCard-LeftColumn">
-                        <img src="./resources/beagle.jpeg" alt="" width="140px" height="140px">
+                        <img
+                            onmouseover="switchImage(this)"
+                            onmouseout="switchImage(this)" 
+                            src="./resources/beagle.jpeg" 
+                            alt="Fluffy" width="140px" 
+                            height="140px">
                         <h1>Fluffy</h1>
                         <p><em>Female</em></p>
                         <p><em>Breed: Beagle</em></p>
@@ -72,8 +81,9 @@
                     <p>
                         Our popular vidoe of the week!
                     </p>
-                    <video 
-                        src="./resources/puppy_video.mp4" width="150px" height="100px">
+                    <video onmouseout="pauseVid(this)" onmouseover="playVideo(this)"
+                    muted="muted" src="./resources/puppy_video.mp4" 
+                    width="150px" height="100px" muted="muted">
                     </video>
                     <p>
                         <em>This is Josie, the 
@@ -90,6 +100,12 @@
                 Vel officiis magnam nemo culpa deleniti officia perspiciatis.
             </p>
             <button id="acceptButton" onclick="removeCookieBox('cookieBox')">I accept</button>
+        </div>
+        <div class="dropDown">
+            <select onchange="chooseName(this)">
+                <option class="Junior" value="Junior">Junior</option>
+                <option class="Fluffy" value="Fluffy">Fluffy</option>
+            </select>
         </div>
     </div>
 </body>
