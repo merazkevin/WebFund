@@ -1,0 +1,178 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 15px;
+}
+
+.WebsiteBody{
+    padding: 15px 15px;
+    margin: 20px;
+    width: 896px;
+    height: 896px;
+}
+.header{
+    background-color: white;
+}
+.headerBox{
+    padding: 5px;
+    gap: 15px;
+    justify-content: space-between;
+    display: flex;
+}
+.headerBox>img{
+    background-color: lightseagreen;
+}
+.headerBox h1{
+    
+    font-size:45px;
+}
+.searchBar{
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 25%;
+    width: 500px;
+    height: 40px;
+    border: black 2px solid;
+}
+.searchIcon{
+    position: relative;
+    top: 15px;
+    right: 40px;
+}
+.headerBox p {
+    margin-top: 8px;
+    font-size: 25px;
+}
+.navBar{
+    padding: 15px;
+    background-color: white;
+    border-bottom: black 3px solid;
+}
+.navBarbox{
+    display: flex;
+    justify-content: space-between;
+}
+.navBar ul{
+    list-style: none;
+    margin-left: 5px;
+    display: flex;
+}
+.navBar li, .navBar a {
+    text-decoration: none;
+    margin-right: 35px;
+    color: black;
+}
+
+.moreButton{
+    margin-right: 15px;
+}
+.subHeader{
+    padding: 10px;
+    width: 896px;
+    height: 70px;
+}
+.subHeader p {
+    margin-right: 15px;
+    text-align: center;
+    font-size: 35px;
+}
+.succulentMainPage{
+    display: flex;
+}
+
+.column1{
+    background-color: lightseagreen;
+    padding: 10px 10px;
+    display: flex;
+    width: 500px;
+    height: 308px;
+}
+
+.insideLeft{
+    padding: 15px;
+    
+}
+.insideLeft span {
+    padding: 15px 15px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+.discover{
+    position: relative;
+    top: 45px;
+}
+.arrow {
+    position: relative;
+    top: 60px;
+}
+
+.insideRight{
+    display: flex;
+}
+
+.column2{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.column2 p {
+    padding: 30px;
+    color: white;
+    background-color: lightseagreen;
+    width: 325px;
+    height: 88px;
+}
+.arrow2{
+    position: relative;
+    bottom: 55px;
+    left:130px;
+}
+.gallery{
+    background-color: rgb(133, 222, 247);
+    width: 833px;
+    height:180px;
+}
+.galleryPicture{
+    display: flex;
+}
+
+.galleryPicture h3 {
+    font-size: 15px;
+    margin-left: 30px;
+}
+.galleryPicture img {
+    border-radius: 50%;
+    width: 127px;
+    height: 127px;
+}
+.galleryPicture span{
+    margin: 6px;
+}
+.cookieBox{
+    position: fixed;
+    bottom: 100px;
+    background-color: white;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 833px;
+    height: 100px;
+    border: black 3px solid;
+}
+.cookieBox span{
+    font-weight: 500;
+    align-items: center;
+}
+.cookieBox button{
+    box-shadow:black 3px 3px 3px;
+    width: 90px;
+    height: 30px;
+    color: white;
+    background-color: lightseagreen;
+}

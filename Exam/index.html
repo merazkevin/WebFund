@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- this is the main body of the website -->
+    <div class="WebsiteBody">
+        <div class="header">
+            <div class="headerBox">
+                <img src="./images/assets/leaf.png" 
+                width="50px" height="50px" alt=""> 
+                <h1>EasyBay</h1>
+                <input class="searchBar"type="search for anything" 
+                placeholder="search for anything">
+                <span class="searchIcon">
+                    <img src="./images/assets/search-dark.png"
+                    width="20px" height="20px" alt="">
+                </span>
+                <p>Signin</p>
+                <span onclick="cartEmptyAlert(this)">
+                    <a><img src="./images/assets/cart-dark.png"
+                    width="40px" height="40px" alt="">
+                </span>
+            </div>
+            <div class="navBar">
+                <div class="navBarbox">
+                    <ul>
+                        <li><a href="#">Aenium</a></li>
+                        <li><a href="#">Andormischus</a></li>
+                        <li><a href="#">Agave</a></li>
+                        <li><a href="#">Aloe</a></li>
+                        <li><a href="#">Anacamliseros</a></li>
+                        <li><a href="#">Aristaloe</a></li>
+                    </ul>
+                    <span class="moreButton">More..</span>
+                </div>
+            </div>
+            <div class="subHeader">
+                <p> 
+                    Your Source For Serious Succulent 
+                    Specialties
+                </p>
+            </div>
+            <div class="succulentMainPage">
+                <div class="column1">
+                    <div class="insideLeft">
+                        <span>
+                            Discover succulent varieties
+                            one spanot or rack at a time
+                        </span>
+                        <span class="discover">
+                            Discover
+                        </span>
+                        <img class="arrow" src="./images/assets/arrow-light.png"
+                        width="50px" height="50px" alt="">
+                    </div>
+                    <div class="insideRight">
+                        <img id="succulent" onmouseout="switchBack(this)" onmouseover="imageswitch(this)" src="./images/assets/succulents-1.jpg" 
+                        alt="succulent1"width="300px" height="286px">
+                    </div>
+                </div>
+                <div class="column2">
+                    <img src="./images/assets/aloe-m.jpg"
+                    alt="succulent2">
+                    <p>soothing Aloe</p>
+                    <img class="arrow2" src="./images/assets/arrow-light.png"
+                        width="30px" height="30px" alt="">
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="galleryPicture">
+                    <span>
+                        <img src="./images/assets/aeonium-s.jpg" 
+                        alt="Aeonium">
+                        <h3>Aeonium</h3>
+                    </span>
+                    <span>
+                        <img src="./images/assets/aloe-s.jpg" 
+                        alt="Aeonium">
+                        <h3>  Aleo</h3>
+                    </span>
+                    <span>
+                        <img src="./images/assets/cactus-s.jpg" 
+                        alt="Aeonium">
+                        <h3>  Cactus</h3>
+                    </span>
+                    <span>
+                        <img src=".//images/assets/echeveria-s.jpg" 
+                        alt="Acheveria">
+                        <h3>Acheveria</h3>
+                    </span>
+                    <span>
+                        <img src="./images/assets/sedum-s.jpg" 
+                        alt="Sedum">
+                        <h3>Sedum</h3>
+                    </span>
+                    <span>
+                        <img src="./images/assets/sempervivum-s.jpg" 
+                        alt="Sempervivum">
+                        <h3>Sempervivum</h3>
+                    </span>
+                </div>
+            </div>
+            <div class="cookieBox">
+                <img src="./images/assets/alert-dark.png"
+                alt="">
+                <p>
+                    This site makes use of third-party cookies,
+                    by clicking "I accept" you agree to the terms
+                    outlined in our <span><a>cookie policy</a></span>
+                <p>
+                <span>
+                    <button id="acceptButton" onclick="cookieRemover('cookieBox')">I accept</button>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
