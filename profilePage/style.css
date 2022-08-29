@@ -1,321 +1,184 @@
-*{
-    padding: 0;
+/* CSS Reset */
+
+* {
     margin: 0;
-    box-sizing: border-box;
-    
+    padding: 0;
 }
 
-/* this is 4 the whole site div */
-#mainNavBod{
-    padding: 3px;
-    background-color: lightcoral;
-    width: 100vf;
-    height: 100vh;
+/* styles to apply to body */
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Roboto', sans-serif;
 }
 
+.flex-container {
+    width: 1000px;
+    margin: 0 auto;
+}
 
-/*this is the NavBar*/
-#navBar{
-    border: 1px white solid;
-    background-color: black;
-    width: 100pv;
-    height: 50px;
+.flex-container, .nav-links, .nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-a{
+
+.nav {
+    height: 80px;
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    width: 50%;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #f3f3f3;
     text-decoration: none;
 }
-#navBar a{ 
-    color: white;
+
+.nav-links a.active {
+    color: #fff;
+    font-weight: bold;
 }
 
-.navLinksBox{
-    margin-top: 10px;
-    display: flex;
-    color: white;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#profileTab{
-    font-weight: 800;
-    font-size:25px;
-    display: flex;
-}
-.navLinks{
-    font-weight: 400;
-    align-items: center;
-    gap: 100px;
-    display: flex;
-}
-
-.signUpButton{
-
-    align-items: center;
-}
-
-.signUpButton> button{
-    color: aliceblue;
-    border: none;
+.btn {
+    height: 30px;
+    width: 100px;
+    color: #fff;
     background-color: #17a2b8;
-    width: 90px;
-    height: 25px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
 }
-/*** columnBod ***/
-    #columnsBod{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex: 1;
-        width: 100vf;
-        height: 100vh;
-    }
 
-        /* left column */
-        #leftColumn{
-            margin-left: 50px;
-            margin-right: 50px;
-            width: 60%;
-            height: 100vh;
-            border:red 1px solid;
-        }
-        /* this is the profileBox */
-            #proBox{
-                margin-top: 30px;
-                margin-bottom: 30px;
-                background-color: white;
-                width: 100%;
-                height: 40%;
-                border: #0d5394 1px solid;
-                border-top: none;
-            }
-                .blueBox{
-                    background-color: #17a2b8;
-                    width: 100%;
-                    height: 35%; 
-                }
-                    .proPic{
-                        margin-left: 15px;
-                        position: relative;
-                        top: 70px;
-                    }
-                    .proPic>img{
-                        background-color: white;
-                        border: black 3px double;
-                        width: 18%;
-                        border-radius: 50%;
-                    }
-                    .name{
-                        font-size: 35px;
-                        font-weight: 800;
-                        margin-left: 10px;
-                        position: relative;
-                        top: 80px;
-                    }
-                    .location{
-                        align-items: center;
-                        margin-left: 5px;
-                        color: gray;
-                        font-weight: 800;
-                        display: flex;
-                        position: relative;
-                        top: 80px;
-                    }
-                    .location img{
-                        width: 18px;
-                        height: 25px;
-                        margin-right: 5px;
-                        margin-left: 5px;
-                    }
-                    .misText{
-                        color: black;
-                        font-size: 20px;
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                        margin-left: 10px;
-                        position: relative;
-                        top: 80px;
-                    }
-                    #editButton{
-                        display: flex;
-                        position: relative;
-                        top: 90px;
-                        margin-left: 10px;
-                    }
-                    .editProButton{
-                        justify-content: center; 
-                        
-                    }
-                    .editProButton img{
-                        margin-right: 5px;
-                        width: 15px;
-                        height: 15px;
-                    }
-                    .editProButton button{
-                        font-weight: 600;
-                        font-size: 14px;
-                        border: none;
-                        align-items: center;
-                        color: #0d5394;
-                        width: 120px;
-                        height: 35px;
-                        display: flex;
-                        background-color: white;
-                    }
-                .whiteBox{
-                    background-color: white;
-                    width: 100%;
-                    height: 65%;
-                }
+.flex-container.main {
+    align-items: flex-start;
+}
 
-        /* this is the edBox */
-            #educationBod{
-                background-color: white;
-                width: 100%;
-                height: 300px;
-                border: #333333 3px solid;
-                border-top: none;
-                }
-                    .educationBox{
-                        color: white;
-                        align-items: center;
-                        padding-left: 10px;
-                        font-weight: 500;
-                        background-color: #333333;
-                        width: 100%;
-                        height: 25px;
-                    }
-                    .educationDetails{
-                        padding: 5px;
-                        
-                    }
-                    .educationDetails>h2{
-                        padding: 5px;
-                    }
-                    .educationDetails>p{
-                        padding: 5px;
-                    }
-                    .educationDetails>h3{
-                        padding: 5px;
-                    }
+.col-2 {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
 
 
+.card-header {
+    padding: 20px;
+    background-color: #222;
+    color: #f3f3f3;
+}
 
+.card-header {
+    display: flex;
+    align-items: center;
+}
 
+.card-body {
+    padding: 20px;
+}
 
+.card-body h1, 
+.card-body h2,
+.card-body h3,
+.card-body p {
+    margin: 20px 0px;
+}
 
-        /* Right Column */
-        #rightColumn{
-            margin-top: 35px; 
-            width: 40%;
-            height: 100%; 
-            border:rgb(6, 233, 225) 5px solid; 
-            margin-right: 50px;
-        }   
+.user-card .card-header {
+    background-color: #17a2b8;
+    height: 85px;
+    margin-bottom: 70px;
+    display: block;
+}
 
-        #connectRequestBox{
-            width: 100%;
-            height: 3%;
-            border: 2px #333333 solid;
-            margin-bottom: 25px;
-        }
-        .headers{
-            color:white;
-            background-color: #333333;
-            width: 100%;
-            height: 30px;
-            display: flex;
-        }
-        .headers>p{
-            padding-left: 6.5px;
-            margin: 5px;
-            color:  #333333;
-            width: 20px;
-            height: 20px;
-            background-color:lightgray;
-            border-radius: 50%;
-        }
-        
-        
-            .connectRequestDetails{                
-                color: white;
-                font-weight: 500;
-                background-color: #333333;
-                width: 100%;
-                height: 100%;
-                }
-                .userBod{
-                    margin-bottom: 25px;
-                    background-color: white;
-                    width: 100%;
-                    
-                    
-                }
-                    .users{
-                        align-items: center;
-                        display: flex;
-                    }
-                    .users p {
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-weight: 300;
-                        font-size: 18px;
-                        margin: 5px;
-                        margin-right:100px;
-                    }
-                    .users>img{
-                        margin: 5px;
-                        width: 32px;
-                        height: 32px;
-                        border-radius: 50%;
-                    }
+.card-footer {
+    border-top: 2px solid #999;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
 
-        .yourConnectionsBox{
-            background-color: white;
-            width: 100%;
-            height: 45%;
-            border: 1px #333333 solid;
-            
-        }
-        /* this is the header */
-        .yourConnections{
-            align-items: center;
-            font-size: 16px;
-            font-weight: 300;
-            color: white;
-            background-color: #333333;
-            display: flex;
+.avatar-m {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 190px;
+    padding: 5px;
+}
 
-        }
-        .yourConnections>p{
-            
-            color: #333333;
-            padding-top: 4px;
-            padding-left: 6.5px;
-            width: 40px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: lightgray; 
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 300;
-            font-size: 18px;
-            margin: 5px;
-            margin-right:10px;
-        }
-        .viewMoreBod{
-            height: 30px;
-            width: 100%;
-            border: #333333 1px solid;
-        }
-        .yourConnectionsBox>p{
-            font-size: 25px;
-            margin: none;
-            background-color: white;
-            height: 35px;
-            width: 100%;
-            border: #333333 1px solid;
-        }
-        
+.icon-s {
+    height: 20px;
+}
 
+a {
+    color: #3a81e6;
+}
 
+.dates {
+    color: #777;
+}
 
+.card-list {
+    padding: 0 20px;
+    padding-top: 20px;
+    list-style-type: none;
+}
 
+.card-list-item, 
+.card-list-item > * {
+    display: flex;
+    align-items: center;
+}
 
+.card-list-item {
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.card-list-item.start {
+    justify-content: flex-start;
+}
+
+.avatar-s, .icon {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.icon {
+    height: 35px;
+}
+
+.icon, .btn {
+    cursor: pointer;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.badge {
+    font-size: 1rem;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    background-color: #999;
+    border-radius: 12px;
+    margin-right: 10px;
+}

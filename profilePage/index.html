@@ -2,135 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- this is 4 the whole site div-->
-    <div id="mainNavBod">
-<!-- this is the navBar -->
-        <div id="navBar">
-            <div class="navLinksBox">
-                <div class="navLinks">
-                        <div id="profileTab">
-                            <p><a href="#">Profile</a></p>
-                        </div>
-                    <p><a href="#">Home</a></p>
-                    <p><a href="#">My Profile</a></p>
-                    <p><a href="#">Find Connections</a></p>
-                </div>
-                <div class="signUpButton">
-                    <button><a href="#">Sign Up</a></button>
-                </div>
-            </div>
-        </div>
-        <div id="columnsBod">
-    <!-- left Column -->
-            <div id="leftColumn">
-                <!-- ProBox     -->
-                <div id="proBox">
-                    <div class="blueBox">
-                        <div class="proPic">
-                            <img src="./images/jane-m.jpg" alt="">
-                        </div>
-                        <div class="name">
-                            <p>Jane Doe</p>
-                        </div>
-                        <div class="location">
-                            <img src="./images/icons/map-marker.png" alt="">
-                            <p>Seattle</p>
-                        </div>
-                        <div class="misText">
-                            <p>Developer | Engineer | Problem Solver</p>
-                            <p>Master of shadows and the Internet!</p>
-                        </div>
-                        <div id="editButton">
-                            <div class="editProButton">
-                                <button> <img src="./images/icons/gear.png" alt="">edit Profile </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="whiteBox">
-                    </div>
-                </div>
-                <!-- educationBox     -->
-                <div id="educationBod">
-                    <div class="educationBox"><p>Education</p>
-                    </div>
-                    <div class="educationDetails">
-                        <h2>Coding Dojo-Full Stack Bootcamp</h2>
-                        <p>Dec 2019-Mar 2020</p>
-                        <h3>Triple black belt in Python, Mern, and C#...</h3>
-                    </div>
-                </div>
-            </div>    
-    <!-- right column -->
-            <div id="rightColumn">
-        <!-- connectRequestBox     -->
-                <div id="connectRequestBox">
-                    <div class="connectRequestDetails">
-                        <div class="headers">
-                            <p>2</p>
-                            <h3>Connection Requests</h3>
-                        </div>    
-                    </div>
-                    <div class="userBod">
-                        <div class="users">
-                            <img src="./images/todd-s.jpg" alt="Todd">
-                            <p>Todd E.</p>
-                            <img src="./images/icons/accept-circle.png" alt="accept circle">    
-                            <img src="./images/icons/close-circle.png" alt="close circle">
-                        </div>
-                        <div class="users">
-                            <img src="./images/phil-s.jpg" alt="Todd">
-                            <p>Phil k.</p>
-                            <img src="./images/icons/accept-circle.png" alt="accept circle">    
-                            <img src="./images/icons/close-circle.png" alt="close circle">
-                        </div>
-                        
-                    </div>
-                
-        <!-- yourconnectBox -->
-                <div class="yourConnectionsBox">
-                    <!-- this is the header -->
-                    <div class="yourConnections">
-                        <p>500</p>
-                        <h3>Your Connections</h3>
-                    </div>
-                    <div class="userBod">
-                        <div class="users">
-                            <img src="./images/adrien-s.jpg" alt="Adrien D">
-                            <p>Adrien D</p>
-                            <img src="./images/icons/accept-circle.png" alt="accept circle">    
-                            <img src="./images/icons/close-circle.png" alt="close circle">
-                        </div>
-                        <div class="users">
-                            <img src="./images/anne-s.jpg" alt="Anne J.">
-                            <p>Anne J.</p>
-                            <img src="./images/icons/accept-circle.png" alt="accept circle">    
-                            <img src="./images/icons/close-circle.png" alt="close circle">
-                        </div>
-                        <div class="users">
-                            <img src="./images/alayne-s.jpg" alt="Alayne">
-                            <p>Alayne</p>
-                            <img src="./images/icons/accept-circle.png" alt="accept circle">    
-                            <img src="./images/icons/close-circle.png" alt="close circle">
-                        </div>
-                        <div class="users">
-                            <img src="./images/arry-s.jpg" alt="Arry">
-                            <p>Arry Y.</p>
-                            <img src="./images/icons/accept-circle.png" alt="accept circle">    
-                            <img src="./images/icons/close-circle.png" alt="close circle">
-                        </div>
-                    </div>
-                    <!-- this is the View More button -->
-                    <p><a href="#">view more...</a></p>
-                </div>
-            </div>
+
+    <!-- navbar -->
+    <div class="nav">
+        <div class="flex-container">
+            <h1 class="nav-title">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+                <li><button class="btn">Sign Out</button></li>
+            </ul>
         </div>
     </div>
 
+    <!-- main -->
+    <div class="flex-container main">
+
+        <!-- 2/3 width column -->
+        <div class="col-2">
+
+            <!-- user info card -->
+            <div class="card user-card">
+                <div class="card-header">
+                    <img src="images/jane-m.jpg" alt="jane" class="avatar-m">
+                </div>
+                <div class="card-body">
+                    <h1 class="name" >Jane Doe</h1>
+                    <h3><img src="icons/map-marker.png" alt="pin" class="icon-s"> Seattle</h3>
+                    <p>Developer | Engineer | Problem Solver<br>
+                    Master of shadows and the Internet!</p>
+                    <p onclick="editButton(this)"><a href="#"><img src="icons/gear.png" alt="gear" class="icon-s"> edit profile</a></p>
+                </div>
+            </div>
+
+            <!-- user education card -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Education</h3>
+                </div>
+                <div class="card-body">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <p class="dates">Dec 2019 - Mar 2020</p>
+                    <p>Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 1/3 width column -->
+        <div class="col-1">
+
+            <!-- connection requests card -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="badge">2</span>
+                    <h3>Connection Requests</h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-list-item">
+                        <span>
+                            <img src="images/todd-s.jpg" alt="todd" class="avatar-s">
+                            Todd E
+                        </span>
+                        <span>
+                            <img onclick="userRemove(this)" src="icons/accept-circle.png" alt="accept" class="icon">
+                            <img src="icons/close-circle.png" alt="close" class="icon">
+                        </span>
+                    </li>
+                    <li class="card-list-item">
+                        <span>
+                            <img src="images/phil-s.jpg" alt="phil" class="avatar-s">
+                            Phil E
+                        </span>
+                        <span>
+                            <img onclick="userRemove(this)" src="icons/accept-circle.png" alt="accept" class="icon">
+                            <img src="icons/close-circle.png" alt="close" class="icon">
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- your connections card -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="badge">500+</span>
+                    <h3>Your Connections</h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-list-item start">
+                        <img src="images/adrien-s.jpg" alt="adrien" class="avatar-s">
+                        Adrien D
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="images/anne-s.jpg" alt="anne" class="avatar-s">
+                        Anne J
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="images/alayne-s.jpg" alt="alayne" class="avatar-s">
+                        Alayne T
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="images/arry-s.jpg" alt="arry" class="avatar-s">
+                        Arry Y
+                    </li>
+                </ul>
+                <div class="card-footer">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

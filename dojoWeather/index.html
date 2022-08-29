@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+
+<div class="header">
+    <h1>Dojo Weather</h1>
+    <ul onmouseover="changeStyle(this)" onclick="alertButton(this)" class="cities">
+        <span>Burbank</span>
+        <span>Chicago</span>
+        <span>Dallas</span>
+    </ul>
+</div>
+<div class="subHeader">
+    <h2>San Jose</h2>
+    <p>
+        Show Temperature in
+        <select>
+            <option value="C°">C°</option>
+            <option value="F°">F°</option>
+        </select>
+    </p>
+</div>
+</head>
+<body>
+    <div class="mainFlexContainer">
+        <div class="Today">
+            <h3>Today</h3>
+            <img src="./images/some_rain.png" alt="rainy" height= 225px width= 225px>
+            <div class="tempContainer">
+                <p id="highest">24°</p>
+                <p id="lowest">18°</p>
+            </div>
+        </div>
+        <div class="Today">
+            <h3>Tomorrow</h3>
+            <img src="./images/some_sun.png" alt="rainy" height= 225px width= 225px>
+            <div class="tempContainer">
+                <p id="highest">27°</p>
+                <p id="lowest">19°</p>
+            </div>
+        </div>
+        <div class="Today">
+            <h3>Friday</h3>
+            <img src="./images/some_clouds.png" alt="rainy" height= 225px width= 225px>
+            <div class="tempContainer">
+                <p id="highest">21°</p>
+                <p id="lowest">16°</p>
+            </div>
+        </div>
+        <div class="Today">
+            <h3>Saturday</h3>
+            <img src="./images/some_clouds.png" alt="rainy" height="225px"
+            width="225px">
+            <div class="tempContainer">
+                <p id="highest">21°</p>
+                <p id="lowest">16°</p>
+            </div>
+        </div>
+    </div>
+    <div class="cookieBox">
+        <img src="./images/cookie.png" alt="cookie" height="50px" width="50px">
+        <h3>Stop! Cookie time</h3>
+        <p>We use (sadly not edible ones) to personalize content and adds, to provide social media features and to analyze our traffic.<a href="#"> Read more...</a></p>
+        <button  class= "buttoRemover" onclick="buttoRemover(this)">I accept!</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
